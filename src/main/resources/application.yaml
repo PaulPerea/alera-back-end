@@ -1,3 +1,19 @@
 spring:
   application:
     name: alera-company
+  r2dbc:
+    url: r2dbc:h2:mem:///libreria-db?options=DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always
+server:
+  port: 8090
+
+logging:
+  level:
+    com.alera.company: DEBUG
+    org.springframework.r2dbc: DEBUG
+    io.r2dbc.h2: DEBUG
