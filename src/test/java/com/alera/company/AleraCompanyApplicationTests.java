@@ -1,4 +1,4 @@
-package com.alera.alera_company;
+package com.alera.company;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
